@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+		<bean class="com.org.setvalue.Employee" id="emp">
+			<property name="id" value="1"/>
+			<property name="name" value="aditya"/>
+			<property name="age" value="20"/>
+			<property name="mobile" value="87877867"/>
+			
+			<property name="num">
+				<list>
+					<value>8989</value>
+					<value>8339</value>
+					<value>0098</value>
+					<value>9378</value>
+				</list>			
+			</property>
+			
+			<property name="address">
+				<set>
+				<value>firestation</value>
+				<value>nayapalli</value>
+				<value>baramunda</value>
+				<value>saheednagar</value>
+				</set>
+			</property>
+			
+			<property name="map">
+			<map>
+			<entry key="dinga" value="101"/>
+			<entry key="dingi" value="102"/>
+			<entry key="nobita" value="103"/>
+			<entry key="sizuka" value="104"/>
+			</map>
+			</property>
+		
+		
+		</bean>
+		
+
+
+</beans>
